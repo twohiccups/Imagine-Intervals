@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background: rgb(239,238,255);
+    background: -moz-linear-gradient(137deg, rgba(239,238,255,1) 0%, rgba(221,249,255,1) 100%);
+    background: -webkit-linear-gradient(137deg, rgba(239,238,255,1) 0%, rgba(221,249,255,1) 100%);
+    background: linear-gradient(137deg, rgba(239,238,255,1) 0%, rgba(221,249,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeeff",endColorstr="#ddf9ff",GradientType=1);
+}
+
+#interval-name {
+    font-size: 8rem;
+    align-content: center;
+    text-align: center;
+}
