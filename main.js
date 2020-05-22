@@ -1,6 +1,7 @@
 const synth = new Tone.Synth().toMaster();
 const synth2 = new Tone.Synth().toMaster();
 
+console.log(synth);
 
 const ratiosMap = [
     {name: "P1", number: "0", enabled: false, ratio: 1},
