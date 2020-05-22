@@ -1,37 +1,73 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Imagine Intervals</title>
-  <meta name="description" content="Music Intervals Excercise">
-  <meta name="author" content="Spitlord">
+    <title>Imagine Intervals</title>
+    <meta name="description" content="Music Intervals Excercise">
+    <meta name="author" content="Spitlord">
 
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.2/Tone.js"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.2/Tone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
-<body id = "background">
-  <script src="main.js"></script>
-  <script src="controller.js"></script>
-  <div id="background">
+<body id="background">
+    <script src="main.js"></script>
+    <script src="controller.js"></script>
 
-  
-  <h2 id="app-info">This little app will help you practice imagining music intervals. The notes that are generated are random frequencies and are not standard notes – this is to help you develop the concept. I will generate a random note, give you an interval, direction, and you will sing or imagine the second note in your head. Press "Space" to get a new interval.</h2>
-  <h1 id="interval-name">Press Space to start</h1>
-      
-      <div id="active-intervals"></div>
 
-    <div id="button bar"> 
-        <button id="repeat-note">Repeat Note</button>
-        <button id="play-answer">Play Answer</button>
-        <button id="play-together">Play Together</button>
-        <button id="magnitude">Direction</button>
+    <div id="app-info">
+        <h2 class="bubble bubble-small">
+            Hi! This little app can help you practice imagining music intervals. I decided to make it because I noticed that it's often easier for me to recognize a certain music structure, then play and hear it in my head. The app generated notes at random frequencies, so you don't get used to a particular tuning and can fully focus on grapsing the concept. The app will tell you which interval to imagine and whether the second note should be higher or lower. You can sing the second note, or and you will sing or imagine the second note in your head. If you prefer using numbers from 1-12 instead of the conventional names, you can switch to that.
+            <br><br>
+            Controls:
+            <ul>
+                <li>Space: new interval</li>
+                <li>Z: repeat the given note</li>
+                <li>X: play the answer</li>
+                <li>C: play both given note and the answer</li>
+                <li class="highlight">Click to close this window</li>
+           </ul>
+        </h2>
     </div>
-    
-  </div>
+
+
+    <div id="outer" class="outer-init">
+        <div id="middle">
+            <div id="inner">
+                <h1 id="interval-name" class="press-space">⬆︎Press Space to start⬇︎</h1>
+                <div id="active-intervals"></div>
+                <div class="button-bar interval-buttons">
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                    <button class="interval-button"></button>
+                </div>
+                <div class="button-bar">
+                    <button id="repeat-note">Repeat Note</button>
+                    <button id="play-answer">Play Answer</button>
+                    <button id="play-together">Play Together</button>
+                    <button id="magnitude">Direction</button>
+                    <button id="interval-names">Switch To Numbers</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
+
 </html>
